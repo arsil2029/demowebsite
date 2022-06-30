@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>round-right-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="round-right-icon" fill-rule="nonzero">
+            <circle id="Oval" fill="#0061A6" cx="12" cy="12" r="12"></circle>
+            <g id="checked-symbol" transform="translate(6.000000, 7.000000)" fill="#FFFFFF">
+                <path d="M11.6197,0.6528125 L11.2761,0.2953125 C10.8989,-0.0984375 10.2809,-0.0984375 9.9025,0.2953125 L4.0689,6.3728125 L1.9989,4.21739583 C1.6217,3.8240625 1.0033,3.8240625 0.6261,4.2178125 L0.2829,4.57489583 C-0.0943,4.96822917 -0.0943,5.61197917 0.2829,6.0053125 L3.3805,9.2353125 C3.7581,9.62822917 4.3761,9.62822917 4.7537,9.2353125 L11.6197,2.08322917 C11.9965,1.68989583 11.9965,1.04614583 11.6197,0.6528125 Z" id="Path"></path>
+            </g>
+        </g>
+    </g>
+</svg>
