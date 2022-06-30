@@ -1,0 +1,985 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Team detail</title>
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="img/Favicon.jpg" type="image/x-icon">
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/bootsnav.css" rel="stylesheet">
+    <link href="css/flaticon-set.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .sg-team img {
+            height: auto;
+            max-width: 100%;
+            border: none;
+            border-radius: 0;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            width: 100%;
+            border-radius: 10px 10px 10px 10px;
+            max-width: 500px;
+        }
+
+        .sg-team {
+            -webkit-transition: background .3s,border .3s,border-radius .3s,-webkit-box-shadow .3s;
+            transition: background .3s,border .3s,border-radius .3s,-webkit-box-shadow .3s;
+            -o-transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+            transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+            transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,-webkit-box-shadow .3s;
+        }
+
+        .sg-team-bgblue {
+            position: relative;
+            margin: -110px 25px 0px 0px;
+            padding: 30px 30px 30px 30px;
+            background-color: #0061A6;
+            border-radius: 10px 10px 10px 10px;
+            webkit-transition: background .3s,border .3s,border-radius .3s,-webkit-box-shadow .3s;
+            transition: background .3s,border .3s,border-radius .3s,-webkit-box-shadow .3s;
+            -o-transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+            transition: background .3s,border .3s,border-radius .3s,box-shadow .3s;
+            transition: background .3s,border .3s,border-radius .3s,box-shadow .3s,-webkit-box-shadow .3s;
+            z-index: 999;
+        }
+
+            .sg-team-bgblue .box-description {
+                color: #FBFBFB;
+                margin-bottom: 15px;
+            }
+
+            .sg-team-bgblue .box-icon i {
+                width: 1em;
+                height: 1em;
+                position: relative;
+                display: block;
+            }
+
+            .sg-team-bgblue .box-icon span {
+                fill: #FFFFFFA3;
+                color: #FFFFFFA3;
+                border-color: #FFFFFFA3;
+                font-size: 40px;
+                /*padding: 7px;*/
+            }
+
+            .sg-team-bgblue .box-icon i:before {
+                position: absolute;
+                left: 50%;
+                -webkit-transform: translateX(-50%);
+                -ms-transform: translateX(-50%);
+                transform: translateX(-50%);
+            }
+
+        .sg-team-detail {
+            padding: 0px 0px 0px 60px;
+        }
+
+            .sg-team-detail h6 {
+                color: #0061A6;
+                font-family: "Poppins", Sans-serif;
+                font-size: 13px;
+                line-height: 1.2em;
+                margin: 0px 0px 0px 10px;
+            }
+
+            .sg-team-detail h3 {
+                color: #111111;
+                font-family: "Poppins", Sans-serif;
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 1.1em;
+            }
+
+            .sg-team-detail .divider {
+                padding-top: 7px;
+                padding-bottom: 7px;
+            }
+
+                .sg-team-detail .divider span {
+                    border-top: 1px solid #0061A6;
+                    width: 40px;
+                    display: -webkit-box;
+                    display: -ms-flexbox;
+                    display: flex;
+                    margin: 0;
+                    direction: ltr;
+                }
+
+        .social-grid-item {
+            margin-right: 5px;
+        }
+
+            .social-grid-item a {
+                border-radius: 10% 10% 10% 10%;
+                background-color: rgba(0,0,0,0);
+                --icon-padding: 0.6em;
+                border-style: solid;
+                border-width: 1px 1px 1px 1px;
+                border-color: #0061A6;
+                font-size: 15px;
+                padding: 7px;
+                display: inline-block;
+                position: relative;
+            }
+
+                .social-grid-item a span {
+                    position: absolute;
+                    top: -10000em;
+                    width: 1px;
+                    height: 1px;
+                    margin: -1px;
+                    padding: 0;
+                    overflow: hidden;
+                    clip: rect(0,0,0,0);
+                    border: 0;
+                }
+
+                .social-grid-item a i {
+                    color: #0061A6;
+                    width: 1em;
+                    height: 1em;
+                    position: relative;
+                    display: block;
+                    text-align: center;
+                }
+
+                .social-grid-item a:before {
+                    position: absolute;
+                    content: "";
+                    z-index: -1;
+                    left: 0;
+                    right: 0;
+                    top: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 100%;
+                    background: #0061A6;
+                    transform: scale(0);
+                    margin: auto;
+                    transition: .5s;
+                }
+
+                .social-grid-item a:hover {
+                    border-color: #0061A6;
+                }
+
+                    .social-grid-item a:hover i {
+                        color: #ffffff;
+                    }
+
+                    .social-grid-item a:hover:before {
+                        transform: scale(1);
+                        background: #0061A6;
+                    }
+
+
+        .sg-team-detail p {
+            color: #111111;
+            line-height: 23px;
+            margin: 0 0 15px;
+            font-size: 17px;
+        }
+
+        .sg-team-detail h5 {
+            font-size: 19px;
+            font-weight: 700;
+            line-height: 1.3em;
+            color: #111111;
+            margin-bottom: 20px;
+        }
+
+        .qualification h6 {
+            color: #0061A6;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.3em;
+            margin: 0;
+            margin-bottom: 6px;
+        }
+
+        .background-overlay {
+            background-image: url(https://elements.sparklewpthemes.com/sparkedu/wp-content/uploads/2022/04/img05.png);
+            background-position: bottom right;
+            background-repeat: no-repeat;
+            opacity: 1;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+
+        .experience p {
+            color: #000000;
+            font-size: 16px;
+            line-height: 25px;
+        }
+
+        .experience .icon-list-icon i {
+            color: #0061A6;
+        }
+
+        .experience .card {
+            background: #ffffff;
+            box-shadow: 0px 0px 25px 0px rgb(0 0 0 / 5%);
+            transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+            margin: 0px 0px 0px 20px;
+            padding: 28px 35px 35px 35px;
+            border: none;
+            border-radius: 10px 10px 10px 10px;
+        }
+
+        .experience .card-title {
+            color: #111111;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .experience {
+            position: relative;
+        }
+
+            .experience .background-overlay {
+                background-image: url(https://elements.sparklewpthemes.com/sparkedu/wp-content/uploads/2022/04/img03.png);
+                background-position: center center;
+                opacity: 0.5;
+                top: 50px;
+            }
+
+        .progress-wrapper {
+            border-radius: 25px;
+            overflow: hidden;
+            position: relative;
+            background-color: #eee;
+            color: #fff;
+            height: 100%;
+        }
+
+        .progress-bar {
+            background-color: #0061A6;
+            border-radius: 2px;
+            height: 16px;
+            line-height: 16px;
+        }
+
+        .progress-text {
+            -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            white-space: nowrap;
+            -o-text-overflow: ellipsis;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            padding-left: 15px;
+        }
+
+        .progress-percentage {
+            padding-right: 15px;
+        }
+
+        .icon-list-item {
+            margin-bottom: 10px;
+        }
+
+        .icon-list-icon {
+            background: url(img/round-right-icon.svg) no-repeat left 3px;
+            list-style: none;
+            padding: 0px 0px 20px 35px;
+            position: relative;
+            text-align: left;
+            font-size: 22px;
+            line-height: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .dreamit-about-thumb-3 {
+            position: relative;
+            /* margin-left: -115px;*/
+        }
+
+        .dreamit-section-title {
+            margin-bottom: 35px;
+            position: relative;
+        }
+
+            .dreamit-section-title h5 {
+                color: #0061A6;
+                font-size: 20px;
+                margin-bottom: 4px;
+                text-transform: uppercase;
+                position: relative;
+                z-index: 1;
+                display: inline-block;
+                position: relative;
+                z-index: 1;
+                padding: 0 0 18px;
+            }
+
+                .dreamit-section-title h5:before {
+                    position: absolute;
+                    content: "";
+                    z-index: -1;
+                    width: 145px;
+                    height: 37px;
+                    background: linear-gradient(to right, #a8d3f3 0%, #dbecf9 100%);
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    top: -6px;
+                    display: inline-block;
+                    border-radius: 3px;
+                }
+
+            .dreamit-section-title h2 {
+                font-size: 50px;
+                line-height: 1;
+                color: #151423;
+                text-transform: uppercase;
+            }
+
+            .dreamit-section-title h2 {
+                font-size: 40px;
+                line-height: 1;
+                color: #151423;
+                text-transform: uppercase;
+            }
+
+            .dreamit-section-title span {
+                color: #0061A6;
+            }
+
+            .dreamit-section-title p {
+                margin: 15px 0 0;
+                color: #33354b;
+                font-size: 16px;
+            }
+
+        /*  .dreamit-section-title:after {
+                position: absolute;
+                content: "";
+                left: -32px;
+                top: -21px;
+                background: url(https://html.dreamitsolution.net/dreamit/digital-agency/assets/images/resource/section1.png);
+                width: 80px;
+                height: 80px;
+                display: inline-block;
+                background-repeat: no-repeat;
+            }*/
+
+        .about-icon {
+            float: left;
+            margin-right: 10px;
+        }
+
+            .about-icon i {
+                font-size: 10px;
+                width: 20px;
+                height: 20px;
+                line-height: 20px;
+                text-align: center;
+                color: #fff;
+                background: linear-gradient(to right, #0061A6 0%, #0061A6 100%);
+                border-radius: 50%;
+                display: inline-block;
+            }
+
+        .dreamit-about-thumb-box {
+            margin-top: 17px;
+            border-top: 1px solid #dbecf9;
+            padding: 23px 0 0;
+        }
+
+        .dreamit-about-signature-thumb {
+            float: left;
+            margin-right: 52px;
+            margin-left: 20px;
+            margin-top: -8px;
+        }
+
+        .about-name-title {
+            overflow: hidden;
+        }
+
+            .about-name-title h2 {
+                font-size: 24px;
+                margin-bottom: 16px;
+                background: linear-gradient( to right, #0061A6, #0061A6, 50%, #fff 50%);
+                -webkit-text-fill-color: #0061A6;
+                -webkit-background-clip: text;
+                background-size: 200% 100%;
+                background-position: 100%;
+            }
+
+            .about-name-title p {
+                margin: -10px 0 0;
+            }
+    </style>
+</head>
+<body>
+    <!-- Header ============================================= -->
+    <header id="home">
+        <nav class="navbar navbar-default navbar-fixed transparent white bootsnav on no-full">
+            <!-- Start Top Search -->
+            <div class="container">
+                <div class="row">
+                    <div class="top-search" style="display: none;">
+                        <div class="input-group">
+                            <form action="#">
+                                <input type="text" name="text" class="form-control" placeholder="Search">
+                                <button type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Search -->
+
+            <div class="container">
+
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav">
+                    <ul>
+                        <li class="search"><a href="#"><i class="fas fa-search"></i></a></li>
+                        <li class="side-menu"><a href="#"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </div>
+                <!-- End Atribute Navigation -->
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo-White-1.png" class="logo logo-display" alt="Logo">
+                        <img src="img/Logo-Blue.png" class="logo logo-scrolled" alt="Logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class="dropdown "><a href="Home.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Company</a>
+                            <ul class="dropdown-menu">
+                              
+                                <li><a href="About.html">About</a></li>
+                                <li><a href="Team.html">Team</a></li>
+                                <li><a href="Career.html">Career</a></li>
+                                <li><a href="Investor.html">Investor</a></li>
+                                <li><a href="Error.html">404 page</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="Service.html">Services</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="Product.html">Product List</a></li>
+                                <li><a href="ProductDetail.html"> Product Detail</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown"><a href="Blog.html">Blog</a></li>
+                       <li class=""><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+
+            <!-- Start Side Menu -->
+            <div class="side">
+                <a href="#" class="close-side"><i class="fas fa-times"></i></a>
+                <div class="widget">
+                    <h4 class="title">Contact Info</h4>
+                    <ul class="contact">
+                        <li>
+                            <div class="icon">
+                                <i class="flaticon-email"></i>
+                            </div>
+                            <div class="info">
+                                <span>Email</span> Info@gmail.com
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="flaticon-call-1"></i>
+                            </div>
+                            <div class="info">
+                                <span>Phone</span> +123 456 7890
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="flaticon-countdown"></i>
+                            </div>
+                            <div class="info">
+                                <span>Office Hours</span> Sat - Wed : 8:00 - 4:00
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h4 class="title">Additional Links</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                    </ul>
+                </div>
+                <div class="widget social">
+                    <h4 class="title">Connect With Us</h4>
+                    <ul class="link">
+                        <li class="facebook"><a href="#"><i class=" fab fa-facebook-f"></i></a></li>
+                        <li class="twitter"><a href="#"><i class="  fab fa-twitter"></i></a></li>
+                        <li class="pinterest"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        <li class="dribbble"><a href="#"><i class=" fab fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Side Menu -->
+
+        </nav>
+        <!-- End Navigation -->
+
+    </header>
+    <!-- End Header -->
+
+    <div class="default-padding">
+        <div class="container">
+            <!-- Breadcrumb ============================================= -->
+            <div class="row">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="Home.html">Home</a></li>
+                        <li class="breadcrumb-item"><a href="Team.html">Team</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Team Detail</li>
+                    </ol>
+                </nav>
+            </div>
+            <!-- End Breadcrumb -->
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="row about-left">
+                        <div class="col-lg-12">
+                            <div class="dreamit-section-title">
+                                <h1 class="mb-2">Dreamit is the best it</h1>
+                                <h1 class="mb-2">Afency <span>In world</span></h1>
+                                <p>Dramatically enable economically sound information for mission-critical deliverables. Completely impact resource-leveling systems vis-a-vis clie focused leadership for real methodologies supported.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="elementor-about-icon-box">
+                                <div class="about-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="elementor-about-title">
+                                    <p>Organic sources visa guranty</p>
+                                </div>
+                                <div class="about-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="elementor-about-title">
+                                    <p>Innovative goal oriented</p>
+                                </div>
+                                <div class="about-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="elementor-about-title">
+                                    <p>Drop disse suscipit sagittis</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="elementor-about-icon-box">
+                                <div class="about-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="elementor-about-title">
+                                    <p>Suspe ndisse suscipit sagittis</p>
+                                </div>
+                                <div class="about-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="elementor-about-title">
+                                    <p>Distinctively maintain dreamit</p>
+                                </div>
+                                <div class="about-icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <div class="elementor-about-title">
+                                    <p>Implement goal oriented</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="dreamit-about-thumb-box">
+                                <div class="dreamit-about-signature-thumb">
+                                    <img src="https://html.dreamitsolution.net/dreamit/digital-agency/assets/images/about/sign.png" alt="">
+                                </div>
+                                <div class="dreamit-about-name">
+                                    <div class="about-name-title">
+                                        <h2 class="main-ttl">Robert Smith</h2>
+                                        <p>CEO &amp; Founder dreamit</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="dreamit-about-thumb-box">
+                        <div class="dreamit-about-thumb-3">
+                            <img src="img/about-us.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="experience my-5">
+            <div class="background-overlay"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="heading-title">Experiences:</h4>
+                        <p>
+                            Quaerat expedita suspendisse asperiores repellendus saepe ultrices eget vitae facilisis cupidatat adipisicing? Potenti commodi gravida expedita taciti enim! Eaque! Ab laboris labore provident dis. Voluptatum dolore laboris consectetur tempore voluptatum Potenti commodi gravida expedita taciti enim! Eaque! Ab laboris labore provident dis.
+                            Voluptatum dolore laboris consectetur tempore voluptatum dolore laboris consectetur tempore volupta.
+                        </p>
+                        <p>Lorem ipsum dolor sit amet, cons aring elit sed dllao the eimod sed dllao the eimod dolor sit am. Rem omnis placeat vulputate inventore maxime minus nec eimod sed dllao the eimod dolor minus nec eimod sed dllao the eimod .</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="widget-container">
+                            <ul class="icon-list-items">
+                                <li class="icon-list-item">
+                                    <span class="icon-list-icon"></span>
+                                    <span class="icon-list-text">Occaecat velit dis! Exercitationem, eleifend ea wisi.</span>
+                                </li>
+                                <li class="icon-list-item">
+                                    <span class="icon-list-icon"></span>
+                                    <span class="icon-list-text">Aliquam fames laoreet, sapiente beatae modi rem.</span>
+                                </li>
+                                <li class="icon-list-item">
+                                    <span class="icon-list-icon"></span>
+                                    <span class="icon-list-text">Sem justo urna aliquam, rhoncus, libero lectus.</span>
+                                </li>
+                                <li class="icon-list-item">
+                                    <span class="icon-list-icon"></span>
+                                    <span class="icon-list-text">Arcu donec aptent torquent eius, lacinia fugiat.</span>
+                                </li>
+                                <li class="icon-list-item">
+                                    <span class="icon-list-icon"></span>
+                                    <span class="icon-list-text">Adipiscing auctor leo, adipisci etiam, similique expedita.</span>
+                                </li>
+                                <li class="icon-list-item">
+                                    <span class="icon-list-icon"></span>
+                                    <span class="icon-list-text">Dignissimos, dolorem dolorem quod ornare fugit.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="card-widget">
+                                    <div class="card-content mb-3">
+                                        <span class="card-title">Technical Qualification</span>
+                                        <div class="progress-wrapper" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="80" aria-valuetext="">
+                                            <div class="progress-bar" data-max="80" style="width: 80%;">
+                                                <span class="progress-text"></span>
+                                                <span class="progress-percentage">80%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-content mb-3">
+                                        <span class="card-title">Technical Qualification</span>
+                                        <div class="progress-wrapper" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="60" aria-valuetext="">
+                                            <div class="progress-bar" data-max="60" style="width: 60%;">
+                                                <span class="progress-text"></span>
+                                                <span class="progress-percentage">60%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-content mb-3">
+                                        <span class="card-title">Technical Qualification</span>
+                                        <div class="progress-wrapper" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90" aria-valuetext="">
+                                            <div class="progress-bar" data-max="90" style="width: 90%;">
+                                                <span class="progress-text"></span>
+                                                <span class="progress-percentage">90%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="bg-darkblue">
+        <div class="start-us-area overflow-hidden bg-gradient text-light default-padding">
+            <!-- Fixed BG -->
+            <div class="fixed-bg" style="background-image: url(media/bb4jmktd/1-1.png);"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+                        <h1 class="text-white fw-bold mb-4"> Obtaining further <br /> information by make a <br />
+                            contact with our <br /> experienced IT staffs.</h1>
+                        <p class="text-white">We’re available for 8 hours a day! <br />
+                            Contact to require a detailed analysis and assessment of your plan</p>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-center mb-5">
+                            <i class="fa fa-phone fa-2x text-white"></i>
+                            <h6 class="text-white my-2">REACH OUT NOW!</h6>
+                            <h3><a class="text-white" href="/">+91 79 4894 0505</a></h3>
+                        </div>
+                        <div class="text-center">
+                            <i class="fa fa-envelope fa-2x text-white"></i>
+                            <h6 class="text-white my-2">Mails</h6>
+                            <h3><a class="text-white" href="/">info@naapbooks.com</a></h3>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Star Footer ============================================= -->
+    <footer class="bg-light text-dark">
+        <div class="container">
+            <div class="f-items default-padding">
+                <div class="row">
+                    <div class="equal-height col-lg-4 col-md-6 item" style="height: 281px;">
+                        <div class="f-item about">
+                            <img src="img/Logo-Blue.png" alt="Logo">
+                            <p>
+                                Required honoured trifling eat pleasure man relation. Assurance yet bed was improving
+                                furniture man. Distrusts delighted
+                            </p>
+                        </div>
+                    </div>
+                    <div class="equal-height col-lg-2 col-md-6 item" style="height: 281px;">
+                        <div class="f-item link">
+                            <h4 class="widget-title"><span class="footer-titel-color">U</span>sefull Links</h4>
+                            <ul>
+                                <li><i class="fas fa-angle-double-right"></i> <a href="about-1.html">About Us</a></li>
+                                <li><i class="fas fa-angle-double-right"></i> <a href="blog.html">Blog</a></li>
+                                <li><i class="fas fa-angle-double-right"></i> <a href="product.html">Product</a></li>
+                                <li><i class="fas fa-angle-double-right"></i> <a href="Team.html">Team</a></li>
+                                <li><i class="fas fa-angle-double-right"></i> <a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="equal-height col-lg-2 col-md-6 item" style="height: 281px;">
+                        <div class="f-item link">
+                            <h4 class="widget-title"><span class="footer-titel-color">S</span>ervices</h4>
+                            <ul>
+                                <li><i class="fas fa-angle-double-right"></i> <a href="#">Marketing &amp; Sales</a></li>
+                                <li><i class="fas fa-angle-double-right"></i> <a href="#">Manufacturing</a></li>
+                                <li><i class="fas fa-angle-double-right"></i> <a href="#">Supply Chain</a></li>
+                                <li><i class="fas fa-angle-double-right"></i> <a href="#">Data Visualization</a></li>
+                                <li><i class="fas fa-angle-double-right"></i> <a href="#">Big Data</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="equal-height col-lg-4 col-md-6 item" style="height: 281px;">
+                        <div class="f-item contact">
+                            <h4 class="widget-title"><span class="footer-titel-color">C</span>ontact Info</h4>
+                            <p>
+                                Possible offering at contempt mr distance stronger an. Attachment excellence announcing
+                            </p>
+                            <div class="address">
+                                <ul>
+                                    <li>
+                                        <strong>Email:</strong> info@naapbooks.com
+                                    </li>
+                                    <li>
+                                        <strong>Contact:</strong> +91 79 4894 0505
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="social">
+                                <li class="">
+                                    <a href="https://www.facebook.com/naapbooks"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="">
+                                    <a href="https://twitter.com/naapbooks"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="">
+                                    <a href="https://www.linkedin.com/company/naapbooks"><i class="fab fa-linkedin"></i></a>
+                                </li>
+                                <li class="">
+                                    <a href="https://www.instagram.com/naapbooks"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>© Copyright 2022. All Rights Reserved by <a href="#">Naapbooks Limited</a></p>
+                    </div>
+                    <div class="col-lg-6 text-end link">
+                        <ul>
+                            <li>
+                                <a href="#">Terms</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Shape -->
+        <!--<div class="footer-shape" style="background-image: url(img/footerbg.svg);"></div>-->
+        <!-- End Shape -->
+    </footer>
+    <!-- End Footer-->
+    <!-- jQuery Frameworks============================================= -->
+    <script src="Js/jquery.min.js"></script>
+    <script src="Js/popper.min.js"></script>
+    <script src="Js/bootstrap.min.js"></script>
+    <script src="Js/bootsnav.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src='Js/wow.min.js'></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!--<section class="teamdetail default-padding ">
+        <div class="background-overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="sg-team">
+                        <img width="500" height="560" src="https://elements.sparklewpthemes.com/sparkedu/wp-content/uploads/2022/04/img022.jpg" class="attachment-full size-full" alt="" loading="lazy" srcset="https://elements.sparklewpthemes.com/sparkedu/wp-content/uploads/2022/04/img022.jpg 500w, https://elements.sparklewpthemes.com/sparkedu/wp-content/uploads/2022/04/img022-268x300.jpg 268w" sizes="(max-width: 500px) 100vw, 500px">
+                    </div>
+                    <div class="sg-team-bgblue">
+                        <div class="box-wrapper">
+                            <div class="box-icon">
+                                <span><i aria-hidden="true" class="fas fa-quote-left"></i></span>
+                            </div>
+                            <div class="box-content">
+                                <p class="box-description">
+                                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="sg-team-detail">
+                        <div class="d-flex">
+                            <div class="divider">
+                                <span class="divider-separator"></span>
+                            </div>
+                            <h6 class="elementor-heading-title elementor-size-default">LAW ADVISOR</h6>
+                        </div>
+                        <h3 class="elementor-heading-title elementor-size-default my-4">Harrison Scott</h3>
+                        <div class="d-flex mb-4">
+                            <div class="social-icons-wrapper">
+                                <span class="social-grid-item">
+                                    <a class="social-icon-facebook" href="#" target="_blank">
+                                        <span class="">Facebook-f</span>
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </span>
+                                <span class="social-grid-item">
+                                    <a class="social-icon-twitter" href="#" target="_blank">
+                                        <span class="">Twitter</span>
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </span>
+                                <span class="social-grid-item">
+                                    <a class="social-icon-google" href="#" target="_blank">
+                                        <span class="">Google</span>
+                                        <i class="fab fa-google"></i>
+                                    </a>
+                                </span>
+                                <span class="social-grid-item">
+                                    <a class="social-icon-instagram" href="#" target="_blank">
+                                        <span class="">Instagram</span>
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </span>
+                                <span class="social-grid-item">
+                                    <a class="social-icon-pinterest" href="#" target="_blank">
+                                        <span class="">Pinterest</span>
+                                        <i class="fab fa-pinterest"></i>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
+                        <p>Quaerat expedita suspendisse asperiores repellendus saepe ultrices eget vitae facilisis cupidatat adipisicing? Potenti commodi gravida expedita taciti enim! Eaque! Ab laboris labore provident dis. Voluptatum dolore laboris consectetur tempore voluptatum.</p>
+                        <p>Lorem ipsum dolor sit amet, cons aring elit sed dllao the eimod sed dllao the eimod dolor sit am. Rem omnis placeat vulputate inventore maxime minus nec eimod sed dllao the eimod dolor.</p>
+                        <h5 class="heading-title">Qualifications:</h5>
+                        <div class="qualification">
+                            <div class="icon-box-wrapper mb-4">
+                                <div class="icon-box-content">
+                                    <h6 class="icon-box-title"><span># 2013 / 2015</span></h6>
+                                    <p class="elementor-icon-box-description">
+                                        Harvey Mudd College (BBA) College of business, London
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="icon-box-wrapper mb-4">
+                                <div class="icon-box-content">
+                                    <h6 class="icon-box-title"><span># 2016 / 2018</span></h6>
+                                    <p class="elementor-icon-box-description">
+                                        Oxford College (Law) Business college, San Francicso
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="icon-box-wrapper mb-4">
+                                <div class="icon-box-content">
+                                    <h6 class="icon-box-title"><span># 2019 / 2020</span></h6>
+                                    <p class="elementor-icon-box-description">
+                                        CEO, Chief supervisor of Alfred Financial company
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->

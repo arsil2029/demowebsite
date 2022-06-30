@@ -1,0 +1,744 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>Team</title>
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="img/Favicon.jpg" type="image/x-icon">
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/bootsnav.css" rel="stylesheet">
+    <link href="css/flaticon-set.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" id="slick-css"
+        href="https://www.indianic.com/wp-content/themes/indianic/assets/styles/slick.css" media="all">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <style>
+        .owl-carousel .owl-item img {
+            max-height: 260px;
+            height: 100%;
+            min-height: 1px;
+        }
+
+        #attech-image {
+            background-image: linear-gradient(rgb(0 96 167 / 79%), rgb(0 96 167 / 76%)), url(http://themetechmount.net/react/altech/images/bg-image/row-bgimage-5.jpg);
+            background-attachment: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: #fff;
+            align-items: center;
+        }
+
+        .featured-imagebox-portfolio {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .featured-imagebox-portfolio .featured-thumbnail {
+            position: relative;
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+            -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+            -webkit-transition-property: -webkit-transform, -webkit-box-shadow;
+            transition-property: -webkit-transform, -webkit-box-shadow;
+            transition-property: transform, box-shadow;
+            transition-property: transform, box-shadow, -webkit-transform, -webkit-box-shadow;
+        }
+
+        .featured-imagebox-portfolio .featured-thumbnail {
+            position: relative;
+            -webkit-transition-timing-function: linear;
+            transition-timing-function: linear;
+            -webkit-transition-duration: .3s;
+            transition-duration: .3s;
+            -webkit-transition-property: -webkit-transform, -webkit-box-shadow;
+            transition-property: -webkit-transform, -webkit-box-shadow;
+            transition-property: transform, box-shadow;
+            transition-property: transform, box-shadow, -webkit-transform, -webkit-box-shadow;
+        }
+
+        .featured-imagebox-portfolio .featured-content {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            max-height: 100%;
+            overflow: hidden;
+            padding: 15px;
+            -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+            z-index: 2;
+            -webkit-transition: all 0.5s;
+            transition: all 0.5s;
+            color: #fff;
+            text-align: center;
+          
+    background-color: #0061a6;
+        }
+
+        .featured-imagebox-portfolio:hover .featured-content {
+            -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+        }
+       
+   
+    </style>
+</head>
+
+<body>
+
+    <!-- Header ============================================= -->
+    <header id="home">
+        <nav class="navbar navbar-default navbar-fixed transparent white bootsnav on no-full">
+            <!-- Start Top Search -->
+            <div class="container">
+                <div class="row">
+                    <div class="top-search" style="display: none;">
+                        <div class="input-group">
+                            <form action="#">
+                                <input type="text" name="text" class="form-control" placeholder="Search">
+                                <button type="submit">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Top Search -->
+
+            <div class="container">
+
+                <!-- Start Atribute Navigation -->
+                <div class="attr-nav">
+                    <ul>
+                        <li class="search"><a href="#"><i class="fas fa-search"></i></a></li>
+                        <li class="side-menu"><a href="#"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </div>
+                <!-- End Atribute Navigation -->
+                <!-- Start Header Navigation -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/logo-White-1.png" class="logo logo-display" alt="Logo">
+                        <img src="img/Logo-Blue.png" class="logo logo-scrolled" alt="Logo">
+                    </a>
+                </div>
+                <!-- End Header Navigation -->
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="navbar-menu">
+                    <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li class=""><a href="Home.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Company</a>
+                            <ul class="dropdown-menu">
+
+                                <li><a href="About.html">About</a></li>
+                                <li><a href="Team.html">Team</a></li>
+                                <li><a href="Career.html">Career</a></li>
+                                <li><a href="Investor.html">Investor</a></li>
+                                <li><a href="Error.html">404 page</a></li>
+                            </ul>
+                        </li>
+                        <li class=""><a href="Service.html">Services</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Product</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="Product.html">Product List</a></li>
+                                <li><a href="ProductDetail.html"> Product Detail</a></li>
+                            </ul>
+                        </li>
+                        <li class=""><a href="Blog.html">Blog</a></li>
+                       <li class=""><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div><!-- /.navbar-collapse -->
+            </div>
+
+            <!-- Start Side Menu -->
+            <div class="side">
+                <a href="#" class="close-side"><i class="fas fa-times"></i></a>
+                <div class="widget">
+                    <h4 class="title">Contact Info</h4>
+                    <ul class="contact">
+                        <li>
+                            <div class="icon">
+                                <i class="flaticon-email"></i>
+                            </div>
+                            <div class="info">
+                                <span>Email</span> Info@gmail.com
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="flaticon-call-1"></i>
+                            </div>
+                            <div class="info">
+                                <span>Phone</span> +123 456 7890
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <i class="flaticon-countdown"></i>
+                            </div>
+                            <div class="info">
+                                <span>Office Hours</span> Sat - Wed : 8:00 - 4:00
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget">
+                    <h4 class="title">Additional Links</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Projects</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
+                    </ul>
+                </div>
+                <div class="widget social">
+                    <h4 class="title">Connect With Us</h4>
+                    <ul class="link">
+                        <li class="facebook"><a href="#"><i class=" fab fa-facebook-f"></i></a></li>
+                        <li class="twitter"><a href="#"><i class="  fab fa-twitter"></i></a></li>
+                        <li class="pinterest"><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        <li class="dribbble"><a href="#"><i class=" fab fa-dribbble"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- End Side Menu -->
+
+        </nav>
+        <!-- End Navigation -->
+
+    </header>
+    <!-- End Header -->
+
+    <div class="default-padding-top">
+        <!-- Breadcrumb ============================================= -->
+        <div class="container">
+            <div class="row">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="Home.html">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Team</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- End Breadcrumb -->
+
+        <div class="teamsection mb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6">
+
+                        <div class="section-title mb-30">
+                            <h1 class="mb-2 fw-bold"> Many organizations realize <br> the benefits of forming work
+                                teams.</h1>
+                        </div>
+                        <p class="ct-text-editor"> Employees need to realize the importance of working well with their
+                            teammates when coming into a new job or an existing one. A team player is more valuable.</p>
+                        <p class="ct-text-editor"> Employees need to realize the importance of working well with their
+                            teammates when coming into a new job or an existing one. A team player is more valuable. A
+                            team player is more valuable. A team player is more valuable.</p>
+
+                    </div>
+                    <div class="col-6">
+                        <div class="about-thum">
+                            <div class="item top-image text-right">
+                                <img src="img/Team1.jpg" alt="rrdevs">
+                            </div>
+                            <div class="item bottom-image">
+                                <img src="img/Team2.jpg" alt="rrdevs">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <section class="our-team-wrapper section-padding" id="section4">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">
+                        <div class="site-heading text-center">
+                            <h4>Our Team</h4>
+                            <h2 class="main-ttl">
+                                Meet Our Experience Team Members
+                            </h2>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="team-members-list row">
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="single-team-member">
+                            <div class="member-img bg-cover bg-center" style="background-image: url('img/5.jpg')">
+                            </div>
+                            <div class="member-bio">
+                                <h4>Wallace S. Camacho</h4>
+                                <p>Business Manager</p>
+                            </div>
+                            <div class="social-profile">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-behance"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="single-team-member">
+                            <div class="member-img bg-cover bg-center" style="background-image: url('img/6.jpg')">
+                            </div>
+                            <div class="member-bio">
+                                <h4>Lawrence Pacheco</h4>
+                                <p>Web Developer</p>
+                            </div>
+                            <div class="social-profile">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-behance"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="single-team-member">
+                            <div class="member-img bg-cover bg-center" style="background-image: url('img/7.jpg')">
+                            </div>
+                            <div class="member-bio">
+                                <h4>Timothy L. Figueroa</h4>
+                                <p>Business Manager</p>
+                            </div>
+                            <div class="social-profile">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-behance"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-xl-3">
+                        <div class="single-team-member">
+                            <div class="member-img bg-cover bg-center" style="background-image: url('img/5.jpg')">
+                            </div>
+                            <div class="member-bio">
+                                <h4>Michael L. Branch</h4>
+                                <p>Product Manager</p>
+                            </div>
+                            <div class="social-profile">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-behance"></i></a>
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="default-padding-50" id="section4">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">
+                        <div class="site-heading text-center">
+                            <h4>How It Work</h4>
+                            <h2 class="main-ttl">
+                                Check Out Our Work Process
+                            </h2>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="ttm-processbox-wrapper">
+                            <div class="ttm-processbox text-center">
+                                <div class="ttm-box-image"><img class="img-fluid" alt="step-one" title="step-one"
+                                        src="http://themetechmount.net/react/altech/images/portfolio/03.jpg">
+                                    <div class="process-num"><span class="number">01</span></div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h5 class="fw-bold text-darkblue">Choose a Service</h5>
+                                    </div>
+                                    <p class="ttm-box-description">Aute irure dolor reprehenderit velit esse cillum
+                                        dolore fugiat</p>
+                                </div>
+                            </div>
+                            <div class="ttm-processbox text-center">
+                                <div class="ttm-box-image"><img class="img-fluid" alt="step-two" title="step-two"
+                                        src="http://themetechmount.net/react/altech/images/portfolio/02.jpg">
+                                    <div class="process-num"><span class="number">02</span></div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h5 class="fw-bold text-darkblue">Request a Meeting</h5>
+                                    </div>
+                                    <p class="ttm-box-description">Aute irure dolor reprehenderit velit esse cillum
+                                        dolore fugiat</p>
+                                </div>
+                            </div>
+                            <div class="ttm-processbox text-center">
+                                <div class="ttm-box-image"><img class="img-fluid" alt="step-three" title="step-three"
+                                        src="http://themetechmount.net/react/altech/images/portfolio/01.jpg">
+                                    <div class="process-num"><span class="number">03</span></div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h5 class="fw-bold text-darkblue">Receive Custom Plan</h5>
+                                    </div>
+                                    <p class="ttm-box-description">Aute irure dolor reprehenderit velit esse cillum
+                                        dolore fugiat</p>
+                                </div>
+                            </div>
+                            <div class="ttm-processbox text-center res-991-mb-0">
+                                <div class="ttm-box-image"><img class="img-fluid" alt="step-four" title="step-four"
+                                        src="http://themetechmount.net/react/altech/images/portfolio/04.jpg">
+                                    <div class="process-num"><span class="number">04</span></div>
+                                </div>
+                                <div class="featured-content">
+                                    <div class="featured-title">
+                                        <h5 class="fw-bold text-darkblue">Let’s Make it Happen</h5>
+                                    </div>
+                                    <p class="ttm-box-description">Aute irure dolor reprehenderit velit esse cillum
+                                        dolore fugiat</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="attech-image default-padding-50" id="attech-image">
+
+            <div class="row align-items-center ttm-textcolor-white">
+                <div class="col-lg-5 res-991-text-center">
+                    <div class="section-title style3 mb-0 clearfix">
+                        <div class="title-header mb-0">
+                            <h5 class="text-white">We Make Connections</h5>
+                            <h2 class="text-white">Explore recent <span class="ttm-textcolor-white">Projects</span></h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 res-991-text-center">
+                    <div class="title-desc">A project is a temporary endeavor with a defined beginning and end, scope,
+                        and assigned resources.</div>
+                </div>
+                <div class="col-lg-2 text-right res-991-text-center res-991-mt-20">
+                    <a class="btn btn-outline-light"> Read More </a>
+                </div>
+            </div>
+        </section>
+
+     
+
+        <section class="default-padding-50">
+            <div class="container-fluid">
+                <div class="owl-carousel owl-theme">
+                    <div class=" item">
+                        <div class="featured-imagebox featured-imagebox-portfolio style1">
+                            <div class="featured-thumbnail">
+                                <img class="img-fluid" alt=""
+                                    src="http://themetechmount.net/react/altech/images/portfolio/01.jpg">
+                            </div>
+                            <div class="featured-content">
+                                <div class="featured-title">
+                                    <h6><a class="text-white" href="#">Neural Networking</a>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" item">
+                        <div class="featured-imagebox featured-imagebox-portfolio style1">
+                            <div class="featured-thumbnail">
+                                <img class="img-fluid" alt=""
+                                    src="http://themetechmount.net/react/altech/images/portfolio/04.jpg">
+                            </div>
+                            <div class="featured-content">
+                                <div class="featured-title">
+                                    <h6><a class="text-white" href="#">Neural Networking</a>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" item">
+                        <div class="featured-imagebox featured-imagebox-portfolio style1">
+                            <div class="featured-thumbnail">
+                                <img class="img-fluid" alt=""
+                                    src="	http://themetechmount.net/react/altech/images/portfolio/05.jpg">
+                            </div>
+                            <div class="featured-content">
+                                <div class="featured-title">
+                                    <h6><a class="text-white" href="#">Neural Networking</a>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" item">
+                        <div class="featured-imagebox featured-imagebox-portfolio style1">
+                            <div class="featured-thumbnail">
+                                <img class="img-fluid" alt=""
+                                    src="http://themetechmount.net/react/altech/images/portfolio/06.jpg">
+                            </div>
+                            <div class="featured-content">
+                                <div class="featured-title">
+                                    <h6><a class="text-white" href="#">Neural Networking</a>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" item">
+                        <div class="featured-imagebox featured-imagebox-portfolio style1">
+                            <div class="featured-thumbnail">
+                                <img class="img-fluid" alt=""
+                                    src="http://themetechmount.net/react/altech/images/portfolio/03.jpg">
+                            </div>
+                            <div class="featured-content">
+                                <div class="featured-title">
+                                    <h6><a class="text-white" href="#">Neural Networking</a>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" item">
+                        <div class="featured-imagebox featured-imagebox-portfolio style1">
+                            <div class="featured-thumbnail">
+                                <img class="img-fluid" alt=""
+                                    src="http://themetechmount.net/react/altech/images/portfolio/02.jpg">
+                            </div>
+                            <div class="featured-content">
+                                <div class="featured-title">
+                                    <h6><a class="text-white" href="#">Neural Networking</a>
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+       
+
+
+        <section class="bg-darkblue">
+            <div class="start-us-area overflow-hidden bg-gradient text-light default-padding">
+                <!-- Fixed BG -->
+                <div class="fixed-bg" style="background-image: url(media/bb4jmktd/1-1.png);"></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-6">
+                            <h1 class="text-white fw-bold mb-4"> Obtaining further <br /> information by make a <br />
+                                contact with our <br /> experienced IT staffs.</h1>
+                            <p class="text-white">We’re available for 8 hours a day! <br />
+                                Contact to require a detailed analysis and assessment of your plan</p>
+                        </div>
+                        <div class="col-6">
+                            <div class="text-center mb-5">
+                                <i class="fa fa-phone fa-2x text-white"></i>
+                                <h6 class="text-white my-2">REACH OUT NOW!</h6>
+                                <h3><a class="text-white" href="/">+91 79 4894 0505</a></h3>
+                            </div>
+                            <div class="text-center">
+                                <i class="fa fa-envelope fa-2x text-white"></i>
+                                <h6 class="text-white my-2">Mails</h6>
+                                <h3><a class="text-white" href="/">info@naapbooks.com</a></h3>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+
+
+    <!-- Star Footer ============================================= -->
+    <footer class="bg-light text-dark">
+        <div class="container">
+            <div class="f-items default-padding">
+                <div class="row">
+                    <div class="equal-height col-lg-4 col-md-6 item" style="height: 281px;">
+                        <div class="f-item about">
+                            <img src="img/Logo-Blue.png" alt="Logo">
+                            <p>
+                                Required honoured trifling eat pleasure man relation. Assurance yet bed was improving
+                                furniture man. Distrusts delighted
+                            </p>
+                        </div>
+                    </div>
+                    <div class="equal-height col-lg-2 col-md-6 item" style="height: 281px;">
+                        <div class="f-item link">
+                            <h4 class="widget-title"><span class="footer-titel-color">U</span>sefull Links</h4>
+                            <ul>
+                                <li><i class="fas fa-angle-double-right"></i> <a href="about-1.html">About Us</a></li>
+                                <li><i class="fas fa-angle-double-right"></i> <a href="blog.html">Blog</a></li>
+                                <li><i class="fas fa-angle-double-right"></i> <a href="product.html">Product</a></li>
+                                <li><i class="fas fa-angle-double-right"></i> <a href="Team.html">Team</a></li>
+                                <li><i class="fas fa-angle-double-right"></i> <a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="equal-height col-lg-2 col-md-6 item" style="height: 281px;">
+                        <div class="f-item link">
+                            <h4 class="widget-title"><span class="footer-titel-color">S</span>ervices</h4>
+                            <ul>
+                                <li><i class="fas fa-angle-double-right"></i> <a href="#">Marketing &amp; Sales</a></li>
+                                <li><i class="fas fa-angle-double-right"></i> <a href="#">Manufacturing</a></li>
+                                <li><i class="fas fa-angle-double-right"></i> <a href="#">Supply Chain</a></li>
+                                <li><i class="fas fa-angle-double-right"></i> <a href="#">Data Visualization</a></li>
+                                <li><i class="fas fa-angle-double-right"></i> <a href="#">Big Data</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="equal-height col-lg-4 col-md-6 item" style="height: 281px;">
+                        <div class="f-item contact">
+                            <h4 class="widget-title"><span class="footer-titel-color">C</span>ontact Info</h4>
+                            <p>
+                                Possible offering at contempt mr distance stronger an. Attachment excellence announcing
+                            </p>
+                            <div class="address">
+                                <ul>
+                                    <li>
+                                        <strong>Email:</strong> info@naapbooks.com
+                                    </li>
+                                    <li>
+                                        <strong>Contact:</strong> +91 79 4894 0505
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="social">
+                                <li class="">
+                                    <a href="https://www.facebook.com/naapbooks"><i class="fab fa-facebook-f"></i></a>
+                                </li>
+                                <li class="">
+                                    <a href="https://twitter.com/naapbooks"><i class="fab fa-twitter"></i></a>
+                                </li>
+                                <li class="">
+                                    <a href="https://www.linkedin.com/company/naapbooks"><i
+                                            class="fab fa-linkedin"></i></a>
+                                </li>
+                                <li class="">
+                                    <a href="https://www.instagram.com/naapbooks"><i class="fab fa-instagram"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p>© Copyright 2022. All Rights Reserved by <a href="#">Naapbooks Limited</a></p>
+                    </div>
+                    <div class="col-lg-6 text-end link">
+                        <ul>
+                            <li>
+                                <a href="#">Terms</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy</a>
+                            </li>
+                            <li>
+                                <a href="#">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Shape -->
+        <!--<div class="footer-shape" style="background-image: url(img/footerbg.svg);"></div>-->
+        <!-- End Shape -->
+    </footer>
+
+
+    <!-- jQuery Frameworks ============================================= -->
+    <script src="Js/jquery.min.js"></script>
+    <script src="Js/popper.min.js"></script>
+    <script src="Js/bootstrap.min.js"></script>
+    <script src="Js/bootsnav.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(function () {
+            // Owl Carousel
+            var owl = $(".owl-carousel");
+            owl.owlCarousel({
+                items: 5,
+                margin: 10,
+                loop: true,
+                nav: true
+            });
+        });
+
+
+        $(".item--inner").hover(function () {
+            $(this).find('.item--social').slideToggle(300)
+        });
+
+        owl.on('mousewheel', '.owl-stage', function (e) {
+            if (e.deltaY > 0) {
+                owl.trigger('next.owl');
+            } else {
+                owl.trigger('prev.owl');
+            }
+            e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
